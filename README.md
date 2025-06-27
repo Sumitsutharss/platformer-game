@@ -1,34 +1,64 @@
-# platformer-game
-# 🕹️ Simple Platformer Game with Amazon Q CLI
+# 🕹️ Mario-Style Platformer Game with Amazon Q CLI
 
-A basic 2D platformer game built using Amazon Q CLI [Pygame](https://www.pygame.org/). This project demonstrates fundamental game development concepts including sprite animation, gravity, jumping mechanics, and platform collision.
-
----
-
-## 🚀 Features
-
-- Custom player character and platform assets
-- Jump and move using arrow keys and spacebar
-- Basic gravity and collision handling
-- Expandable level design using sprite groups
+A Python-based 2D platformer built with Pygame — collect coins, avoid enemies, and aim for the highest score!
 
 ---
 
-## 🎮 Controls
+## 🎮 New Features:
 
-| Key          | Action        |
-|--------------|---------------|
-| ⬅️ Left Arrow | Move left     |
-| ➡️ Right Arrow | Move right    |
-| ␣ Spacebar   | Jump          |
-| ❌ ESC / Quit | Exit game     |
+### 🪙 Collectibles & Scoring:
+- Golden coins that bob up and down
+- Score system — collect coins for 10 points each
+- Particle effects when collecting coins
+
+### 👾 Enemies:
+- Purple enemies with simple faces that patrol platforms
+- AI movement — they bounce back and forth
+- Collision detection — touching an enemy kills the player
+
+### 🔊 Sound Effects:
+- Jump sound
+- Coin collection sound
+- Death sound
+- All sounds generated using math functions
+
+### 🎲 Enhanced Gameplay:
+- Game over system with visual feedback
+- Restart with **R** after dying
+- Death animation — X eyes
+- Score display UI
+
+### 🎨 Visuals:
+- Particle system for effects
+- Better enemy designs
+- Colorful enhanced coins
+- Game over overlay
 
 ---
 
-## 📦 Installation
+## 🎮 Controls:
 
-1. **Clone this repo:**
+| Action    | Keys              |
+|-----------|-------------------|
+| Move      | Arrow keys / WASD |
+| Jump      | Space / W / ↑     |
+| Restart   | R (after death)   |
+| Quit      | ESC               |
+
+---
+
+## 📷 Screenshots
+
+![Screenshot](media/screenshot.png)
+
+![Gameplay](media/gameplay.gif)
+
+---
+
+## 🧱 Installation
 
 ```bash
 git clone https://github.com/sumitsutharss/platformer-game.git
 cd platformer-game
+pip install -r requirements.txt
+python3 game.py
